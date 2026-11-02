@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JALVAR4 | Análisis Macroeconómico y Mercados</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --text-bright: #f0f6fc;
+            --accent-color: #2ea44f;
+            --border-color: #30363d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            background-color: rgba(22, 27, 34, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-bright);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--text-bright);
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #8b949e;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--text-bright);
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title::after {
+            content: '';
+            flex-grow: 1;
+            height: 1px;
+            background-color: var(--border-color);
+        }
+
+        .article-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 25px;
+            margin-bottom: 25px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .article-card:hover {
+            transform: translateY(-2px);
+            border-color: #8b949e;
+        }
+
+        .article-meta {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .article-card h2 {
+            font-size: 1.4rem;
+            color: var(--text-bright);
+            margin-bottom: 12px;
+        }
+
+        .article-card p {
+            color: #8b949e;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .read-more {
+            color: var(--text-bright);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .read-more:hover {
+            color: var(--accent-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #8b949e;
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 80px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-container { flex-direction: column; gap: 15px; }
+            nav a { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">JALVAR4<span>.</span></a>
+            <nav>
+                <a href="#analisis">Análisis</a>
+                <a href="#sobre-mi">Enfoque</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Perspectiva y Mercado Global</h1>
+            <p>Un espacio de análisis independiente sobre tendencias macroeconómicas, la reconfiguración comercial y las fuerzas disruptivas que moldean el mercado actual.</p>
+        </section>
+
+        <section id="analisis">
+            <div class="section-title">Últimos Análisis</div>
+            
+            <article class="article-card">
+                <div class="article-meta">Mercado Automotriz • Tendencias</div>
+                <h2>El Efecto de las Marcas Chinas en los Canales de Distribución Locales</h2>
+                <p>Cómo la agresiva estrategia de volumen, el control del soporte postventa y la veloz transición hacia la tecnología de software y electrificación están obligando a reconfigurar los márgenes de las redes de talleres y concesionarias tradicionales.</p>
+                <a href="#" class="read-more">Leer artículo completo →</a>
+            </</article>
+
+            <article class="article-card">
+                <div class="article-meta">Estructura Laboral • Opinión</div>
+                <h2>Sistemas Críticos y Capacidades Individuales en Entornos de Alta Presión</h2>
+                <p>Una reflexión sobre la toma de decisiones bajo estrés y cómo la madurez del carácter, la templanza social y los procesos de crianza cultural influyen en la gestión de crisis frente a los rígidos e impersonales estándares del sistema corporativo moderno.</p>
+                <a href="#" class="read-more">Leer artículo completo →</a>
+            </</article>
+        </section>
+
+        <section id="sobre-mi" style="margin-top: 60px;">
+            <div class="section-title">El Enfoque</div>
+            <p style="color: #8b949e; font-size: 1.05rem;">Este sitio web está diseñado con un propósito claro: analizar las variables ocultas de la economía y las dinámicas sociales sin los sesgos ni filtros de las plataformas comerciales tradicionales. La propiedad intelectual independiente y la solidez de la infraestructura propia representan el pilar de un análisis libre.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 JALVAR4. Todos los derechos reservados. Alojo independiente blindado en la infraestructura raíz.</p>
+    </footer>
+
+</body>
+</html>
